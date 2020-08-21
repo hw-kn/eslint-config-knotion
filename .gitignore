@@ -1,0 +1,7 @@
+.DS_Store
+*.bak
+*.lock
+*.log
+*.tgz
+~*
+node_modules
