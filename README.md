@@ -23,7 +23,7 @@ Esta configuración puede usarse sin problemas con el plugin ESLint para [VS Cod
 Instala ESLint v7.6 o posterior y el `eslint-config-knotion` directo desde el repositorio de GitHub:
 
 ```bash
-yarn add eslint@7.x github:hw-kn/eslint-config-knotion -D
+yarn add -D eslint@7 github:hw-kn/eslint-config-knotion
 ```
 
 Crea un archivo de configuración regular, como en este .eslintrc.js de ejemplo:
@@ -35,7 +35,7 @@ module.exports = {
 }
 ```
 
-Es todo, las dependencias están incluidas en la configuración.
+Es todo, las dependencias están incluídas en la configuración.
 Puedes sobreescribir lo que quieras (rules, env, etc).
 
 ### Reglas de runtime
@@ -58,29 +58,35 @@ Instala la extensión [ESLint para VS Code](https://marketplace.visualstudio.com
 
 ```json
 {
+  // Esto habilita a la extensión ESLint como formatter con Prettierx integrado
   "eslint.format.enable": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll.eslint": true
+  },
+  // Si tienes `editor.formatOnSave:true` global puedes omitir la regla anterior
+  // y definir solamente el formateador predeterminado.
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   }
 }
 ```
 
 ### NOTA
 
-El último bloque (`editor.codeActionsOnSave`) formatea automáticamente los archivos antes de guardarlos.
+El bloque `editor.codeActionsOnSave` formatea automáticamente los archivos manejados por ESLint antes de guardarlos y hace lo mismo que `editor.formatOnSave:true` para esos archivos.
 
 ## Fake Prettier
 
-Si quieres guardar un archivo formateado por **prettierx** pero sin comprobarlo con ESLint puedes usar la extensión [Prettier para de VS Code](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) con el [Prettier de aMarCruz](https://github.com/aMarCruz/prettier).
+Si quieres guardar un archivo formateado por **PrettierX** pero sin comprobarlo con ESLint puedes usar la extensión [Prettier para de VS Code](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) con el [Prettier de aMarCruz](https://github.com/aMarCruz/prettier).
 
 ```bash
-yarn add github:aMarCruz/prettier -D
+yarn add -D github:aMarCruz/prettier
 ```
 
-Este módulo está pensado para trabajar con cualquier extensión o comando que use Prettier, usando en su lugar el más poderoso PrettierX.
+Este módulo está pensado para trabajar con cualquier extensión o comando que use Prettier, sustituyéndolo por el más poderoso PrettierX.

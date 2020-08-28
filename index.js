@@ -184,15 +184,14 @@ module.exports = {
 
   env: {
     browser: true,
-    es2017: true,
+    es2017: true, // esto pone `parserOptions.ecmaVersion` = 2018
   },
 
   parserOptions: {
     ecmaFeatures: { jsx: true },
-    ecmaVersion: 2018,
     impliedStrict: true,
     sourceType: 'module',
-    warnOnUnsupportedTypeScriptVersion: false,
+    warnOnUnsupportedTypeScriptVersion: false, // typescript-parser
   },
 
   settings: {
