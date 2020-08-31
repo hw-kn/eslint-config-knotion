@@ -1,5 +1,15 @@
 # Changes
 
+## \[0.1.2] - 2020-08-28
+
+### Changed
+
+- Requiere yarn `^1.22.5` como versión mínima y la establece con `yarn policies set-version` (este comando crea el archivo .yarnrc)
+
+### Removed
+
+- Elimina el valor `singleline.delimiter` de la regla `@typescript-eslint/member-delimiter-style` por conflicto con PrettierX (se usará el delimitador default ";")
+
 ## \[0.1.1] - 2020-08-28
 
 ### Changed

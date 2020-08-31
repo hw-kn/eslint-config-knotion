@@ -20,7 +20,6 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 2018,
     "impliedStrict": true,
     "sourceType": "module",
     "warnOnUnsupportedTypeScriptVersion": false
@@ -386,7 +385,6 @@
           "delimiter": "none"
         },
         "singleline": {
-          "delimiter": "comma",
           "requireLast": false
         }
       }

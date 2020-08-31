@@ -42,7 +42,6 @@ const memberDelimiterStyleOpts = {
     delimiter: 'none',
   },
   singleline: {
-    delimiter: 'comma',
     requireLast: false,
   },
 }
