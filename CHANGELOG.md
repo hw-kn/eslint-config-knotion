@@ -1,5 +1,13 @@
 # Changes
 
+## \[0.1.3] - 2020-09-01
+
+### Fixed
+
+- Sustituye `no-loss-of-precision` por `@typescript-eslint/no-loss-of-precision` también en los .js, debido a problemas con los separadores numéricos de ES8.
+- Sustituye `no-shadow` por `@typescript-eslint/no-shadow` debido a incompatibilidades con TS.
+- Deshabilita `@typescript-eslint/no-unused-vars` debido a un bug.
+
 ## \[0.1.2] - 2020-08-28
 
 ### Changed
