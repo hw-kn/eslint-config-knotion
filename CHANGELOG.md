@@ -1,5 +1,11 @@
 # Changes
 
+## \[0.1.4] - 2020-09-01
+
+### Fixed
+
+- La regla `simple-import-sort/sort` ahora reconoce a los paquetes que inician con `'public\/'`, `'src/'`, y `'~/'` como internos y los coloca después de los `import` de efectos secundarios.
+
 ## \[0.1.3] - 2020-09-01
 
 ### Fixed

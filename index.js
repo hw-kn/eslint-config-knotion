@@ -150,12 +150,12 @@ const simpleImportSortOpts = {
     [`^(${require('module').builtinModules.join('|')})(/|$)`],
     // Packages. `react` related packages come first.
     ['^react', '^@?\\w'],
-    // Internal packages.
-    ['^src/'],
     // Side effect imports.
     ['^\\u0000'],
     // Style imports.
-    ['^.+\\.s?css$'],
+    ['^.+\\.(s?css|less)$'],
+    // Internal packages.
+    ['^public\/', '^src/', '^~/'],
     // Parent imports. Put `..` first.
     ['^\\.\\./?$', '^\\.\\.(?!/?$)'],
     // Other relative imports. Put same-folder imports and `.` last.
