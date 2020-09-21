@@ -1,4 +1,3 @@
-/* eslint max-len:0, prettierx/options:[2,{printWidth:120}] */
 /*
   Configuración para ESLint 7.x
 
@@ -85,9 +84,10 @@ const noUnusedVarsOpts = {
 
 const noUseBeforeDefineOpts = {
   classes: true,
+  enums: true,
   functions: false,
   typedefs: false,
-  variables: true,
+  variables: false, // aún se checa si está en el mismo "scope"
 }
 
 const noUselessRenameOpts = {
@@ -116,14 +116,6 @@ const spacedCommentsOpts = {
 const promiseCatchOrReturnOpts = {
   allowThen: true,
   terminationMethod: ['catch', 'finally'],
-}
-
-const banTSCommentOpts = {
-  'ts-expect-error': 'allow-with-description',
-  'ts-ignore': 'allow-with-description',
-  'ts-nocheck': false,
-  'ts-check': false,
-  'minimumDescriptionLength': 3,
 }
 
 const a11yAnchorIsValidOpts = {
@@ -155,7 +147,7 @@ const simpleImportSortOpts = {
     // Style imports.
     ['^.+\\.(s?css|less)$'],
     // Internal packages.
-    ['^public\/', '^src/', '^~/'],
+    ['^public/', '^src/', '^~/'],
     // Parent imports. Put `..` first.
     ['^\\.\\./?$', '^\\.\\.(?!/?$)'],
     // Other relative imports. Put same-folder imports and `.` last.
@@ -181,14 +173,15 @@ module.exports = {
     'unicorn',
   ],
 
+  // https://www.npmjs.com/package/globals
   env: {
     browser: true,
-    es2017: true, // esto pone `parserOptions.ecmaVersion` = 2018
+    es2017: true, // esto pone `parserOptions.ecmaVersion` = 8 (2017)
   },
 
   parserOptions: {
-    ecmaFeatures: { jsx: true },
-    impliedStrict: true,
+    ecmaFeatures: { impliedStrict: true, jsx: true },
+    ecmaVersion: 2019,
     sourceType: 'module',
     warnOnUnsupportedTypeScriptVersion: false, // typescript-parser
   },
@@ -325,7 +318,6 @@ module.exports = {
 
     '@typescript-eslint/adjacent-overload-signatures': ON,
     '@typescript-eslint/array-type': [ON, { default: 'array' }],
-    '@typescript-eslint/ban-ts-comment': [ON, banTSCommentOpts],
     '@typescript-eslint/ban-types': ON,
     '@typescript-eslint/consistent-type-assertions': [ON, consistentTypeAssertionsOpts],
     '@typescript-eslint/lines-between-class-members': [ON, 'always', linesBetweenClassMembersOpts],

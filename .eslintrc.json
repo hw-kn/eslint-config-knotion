@@ -1,0 +1,14 @@
+{
+  "env": {
+    "node": true,
+    "es2017": true
+  },
+
+  "parserOptions": {
+    "ecmaFeatures": { "impliedStrict": true },
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+
+  "extends": ["eslint:recommended"]
+}

@@ -1,5 +1,22 @@
 # Changes
 
+## \[0.1.5] - 2020-09-21
+
+### Changed
+
+- `@typescript-eslint/no-use-before-define` ya no verifica variable en contexto superior.
+- Establece `ecmaVersion` a 2019, en lugar de 2017 como estaba automáticamente.
+- Actualiza dependencias.
+
+### Fixed
+
+- Mueve `impliedStrict` a `ecmaFeatures`, donde pertenece.
+
+### Removed
+
+- La regla `@typescript-eslint/ban-ts-comment`.
+  No tiene mucho sentido si no se sabe lo que se está haciendo.
+
 ## \[0.1.4] - 2020-09-01
 
 ### Fixed
