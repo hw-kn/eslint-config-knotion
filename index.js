@@ -327,7 +327,6 @@ module.exports = {
     '@typescript-eslint/no-confusing-non-null-assertion': ON,
     '@typescript-eslint/no-extra-non-null-assertion': ON,
     '@typescript-eslint/no-extraneous-class': WARN,
-    '@typescript-eslint/no-for-in-array': ON,
     '@typescript-eslint/no-inferrable-types': ON,
     '@typescript-eslint/no-loss-of-precision': ON,
     '@typescript-eslint/no-misused-new': ON,
