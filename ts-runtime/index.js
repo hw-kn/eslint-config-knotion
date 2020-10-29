@@ -1,9 +1,13 @@
+const noBaseToStringOpts = {
+  ignoredTypeNames: ['RegExp', 'Error', 'TypeError', 'URL'],
+}
+
 /*
   Rules that requires runtime info from the TS compiler
 */
 module.exports = {
   rules: {
-    '@typescript-eslint/no-base-to-string': 2,
+    '@typescript-eslint/no-base-to-string': [2, noBaseToStringOpts],
     '@typescript-eslint/no-floating-promises': 2,
     '@typescript-eslint/no-implied-eval': 2,
     '@typescript-eslint/no-misused-promises': [2, { checksVoidReturn: false }],
@@ -22,12 +26,11 @@ module.exports = {
     '@typescript-eslint/prefer-nullish-coalescing': 1,
     '@typescript-eslint/prefer-reduce-type-parameter': 2,
     '@typescript-eslint/prefer-regexp-exec': 1,
-    '@typescript-eslint/prefer-string-starts-ends-with': 2,
+    '@typescript-eslint/prefer-string-starts-ends-with': 1,
     '@typescript-eslint/promise-function-async': 1,
     '@typescript-eslint/require-array-sort-compare': 2,
     '@typescript-eslint/restrict-plus-operands': 1,
-    '@typescript-eslint/restrict-template-expressions': 2,
+    '@typescript-eslint/restrict-template-expressions': 1,
     '@typescript-eslint/return-await': 2,
-    '@typescript-eslint/unbound-method': 2,
   },
 }

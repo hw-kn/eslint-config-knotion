@@ -18,9 +18,10 @@
   },
   "parserOptions": {
     "ecmaFeatures": {
+      "impliedStrict": true,
       "jsx": true
     },
-    "impliedStrict": true,
+    "ecmaVersion": 2019,
     "sourceType": "module",
     "warnOnUnsupportedTypeScriptVersion": false
   },
@@ -102,7 +103,6 @@
     ],
     "no-constructor-return": 2,
     "no-control-regex": 2,
-    "no-debugger": 2,
     "no-delete-var": 2,
     "no-div-regex": 2,
     "no-dupe-args": 2,
@@ -304,8 +304,9 @@
             ",",
             ":",
             "::",
-            "flow-include",
-            "#__PURE__"
+            "#__PURE__",
+            "#__INLINE__",
+            "#__NOINLINE__"
           ],
           "balanced": true
         },
@@ -348,16 +349,6 @@
       2,
       {
         "default": "array"
-      }
-    ],
-    "@typescript-eslint/ban-ts-comment": [
-      2,
-      {
-        "ts-expect-error": "allow-with-description",
-        "ts-ignore": "allow-with-description",
-        "ts-nocheck": false,
-        "ts-check": false,
-        "minimumDescriptionLength": 3
       }
     ],
     "@typescript-eslint/ban-types": 2,
@@ -433,7 +424,6 @@
     "@typescript-eslint/no-confusing-non-null-assertion": 2,
     "@typescript-eslint/no-extra-non-null-assertion": 2,
     "@typescript-eslint/no-extraneous-class": 1,
-    "@typescript-eslint/no-for-in-array": 2,
     "@typescript-eslint/no-inferrable-types": 2,
     "@typescript-eslint/no-loss-of-precision": 2,
     "@typescript-eslint/no-misused-new": 2,
@@ -469,16 +459,16 @@
       2,
       {
         "classes": true,
+        "enums": true,
         "functions": false,
         "typedefs": false,
-        "variables": true
+        "variables": false
       }
     ],
     "@typescript-eslint/no-useless-constructor": 1,
     "@typescript-eslint/prefer-as-const": 2,
     "@typescript-eslint/prefer-function-type": 1,
     "@typescript-eslint/prefer-namespace-keyword": 2,
-    "@typescript-eslint/prefer-optional-chain": 1,
     "@typescript-eslint/prefer-ts-expect-error": 1,
     "@typescript-eslint/type-annotation-spacing": 2,
     "@typescript-eslint/unified-signatures": 1,
@@ -495,13 +485,15 @@
             "^@?\\w"
           ],
           [
-            "^src/"
-          ],
-          [
             "^\\u0000"
           ],
           [
-            "^.+\\.s?css$"
+            "^.+\\.(s?css|less)$"
+          ],
+          [
+            "^public/",
+            "^src/",
+            "^~/"
           ],
           [
             "^\\.\\./?$",
@@ -805,12 +797,14 @@
         "default-param-last": 0,
         "no-dupe-class-members": 0,
         "no-empty-function": 0,
+        "no-redeclare": 0,
         "no-return-await": 0,
         "no-unused-vars": 0,
         "@typescript-eslint/default-param-last": 2,
         "@typescript-eslint/no-array-constructor": 2,
         "@typescript-eslint/no-dupe-class-members": 2,
         "@typescript-eslint/no-empty-function": 1,
+        "@typescript-eslint/no-redeclare": 2,
         "@typescript-eslint/no-require-imports": 2
       }
     }

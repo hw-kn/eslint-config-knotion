@@ -1,5 +1,15 @@
 # Changes
 
+## \[0.1.7] - 2020-10-29
+
+### Changed
+
+- Usa la opción `ignoredTypeNames` en `@typescript-eslint/no-base-to-string`
+- Elimina `prefer-optional-chain` y `unbound-method` de reglas de runtime TS.
+- Elimina 'flowinclude' (Flow está en desuso) de los comentarios de block y agrega `#__INLINE__` y `#__NOINLINE__` (directivas Terser).
+- Elimina `no-debugger`, en producción el minificador quita estas instrucciones.
+- Deshabilita la regla `no-redeclare` de ESLint y habilita la de TypeScript en .ts y .tsx
+
 ## \[0.1.6] - 2020-09-30
 
 ### Fixed
