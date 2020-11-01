@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-knotion",
   "description": "Customized ESLint config for Knotion Apps",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "main": "index.js",
   "author": "HabitatWeb <atencion@habitatweb.com.mx> (https://habitatweb.mx)",
   "contributors": [
@@ -35,7 +35,7 @@
     "eslint-plugin-promise": "~4.2.1",
     "eslint-plugin-react": "~7.21.5",
     "eslint-plugin-react-hooks": "~4.2.0",
-    "eslint-plugin-react-perf": "~3.2.4",
+    "eslint-plugin-react-perf": "~3.3.0",
     "eslint-plugin-simple-import-sort": "~5.0.3",
     "eslint-plugin-unicorn": "~22.0.0",
     "tslib": "^1.10.0"

@@ -138,20 +138,16 @@ const a11yNoNoninterElemToInteractive = {
 
 const simpleImportSortOpts = {
   groups: [
-    // Node.js builtins. You could also generate this regex if you use a `.js` config.
+    // NodeJS
     [`^(${require('module').builtinModules.join('|')})(/|$)`],
-    // Packages. `react` related packages come first.
+    // Paquetes externos. Primero `react` y relacionados
     ['^react', '^@?\\w'],
-    // Side effect imports.
-    ['^\\u0000'],
-    // Style imports.
-    ['^.+\\.(s?css|less)$'],
-    // Internal packages.
+    // Importaciones de efecto secundario y estilos
+    ['^\\u0000', '^.+\\.(s?css|less)$'],
+    // Paquates internos con caracteres de path sustituto
     ['^public/', '^src/', '^~/'],
-    // Parent imports. Put `..` first.
-    ['^\\.\\./?$', '^\\.\\.(?!/?$)'],
-    // Other relative imports. Put same-folder imports and `.` last.
-    ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
+    // Importaciones relativas, primero carpetas superiores
+    ['^\\.\\.(?!/?$)', '^\\.\\./?$', '^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
   ],
 }
 

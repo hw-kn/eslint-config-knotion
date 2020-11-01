@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
 const fs = require('fs')
 const exec = require('child_process').execSync
 const conf = require('..')

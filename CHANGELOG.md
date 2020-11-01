@@ -1,5 +1,12 @@
 # Changes
 
+## \[0.1.8] - 2020-10-31
+
+### Changed
+
+- Actualiza `react-perf`
+- Compacta los `imports` con opciones de `eslint-plugin-simple-import-sort`.
+
 ## \[0.1.7] - 2020-10-29
 
 ### Changed
