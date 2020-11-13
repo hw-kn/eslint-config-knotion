@@ -1,6 +1,6 @@
 # Changes
 
-## \[0.1.9] - Unreleased
+## \[0.1.9] - 2020-11-12
 
 ### Added
 
