@@ -1,5 +1,23 @@
 # Changes
 
+## \[0.1.9] - Unreleased
+
+### Added
+
+- Regla `@typescript-eslint/no-confusing-void-expression` con ignoreVoidOperator `true`
+- Regla `unicorn/no-object-as-default-parameter`
+
+### Changed
+
+- Actualiza dependencias, ahora se requiere ESLint 7.11 como mínimo.
+- Cambia `@typescript-eslint/prefer-reduce-type-parameter` a warn en lugar de error.
+- Agrega opciones a `@typescript-eslint/restrict-template-expressions`
+- Usa `@typescript-eslint/no-duplicate-imports` para archivos TS, en lugar de la regla de nativa de ESLint.
+
+### Removed
+
+- `@typescript-eslint/prefer-string-starts-ends-with`
+
 ## \[0.1.8] - 2020-10-31
 
 ### Changed

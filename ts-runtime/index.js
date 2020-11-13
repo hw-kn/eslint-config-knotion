@@ -2,6 +2,13 @@ const noBaseToStringOpts = {
   ignoredTypeNames: ['RegExp', 'Error', 'TypeError', 'URL'],
 }
 
+const restrictTemplateExpressionsOpts = {
+  allowNumber: true,
+  allowBoolean: true,
+  allowAny: false,
+  allowNullish: true,
+}
+
 /*
   Rules that requires runtime info from the TS compiler
 */
@@ -24,13 +31,12 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 0,
     '@typescript-eslint/prefer-includes': 1,
     '@typescript-eslint/prefer-nullish-coalescing': 1,
-    '@typescript-eslint/prefer-reduce-type-parameter': 2,
+    '@typescript-eslint/prefer-reduce-type-parameter': 1,
     '@typescript-eslint/prefer-regexp-exec': 1,
-    '@typescript-eslint/prefer-string-starts-ends-with': 1,
     '@typescript-eslint/promise-function-async': 1,
     '@typescript-eslint/require-array-sort-compare': 2,
     '@typescript-eslint/restrict-plus-operands': 1,
-    '@typescript-eslint/restrict-template-expressions': 1,
+    '@typescript-eslint/restrict-template-expressions': [1, restrictTemplateExpressionsOpts],
     '@typescript-eslint/return-await': 2,
   },
 }
