@@ -15,6 +15,7 @@ const restrictTemplateExpressionsOpts = {
 module.exports = {
   rules: {
     '@typescript-eslint/no-base-to-string': [2, noBaseToStringOpts],
+    '@typescript-eslint/no-confusing-void-expression': [1, { ignoreVoidOperator: true }],
     '@typescript-eslint/no-floating-promises': 2,
     '@typescript-eslint/no-implied-eval': 2,
     '@typescript-eslint/no-misused-promises': [2, { checksVoidReturn: false }],

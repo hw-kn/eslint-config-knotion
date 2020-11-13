@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-knotion",
   "description": "Customized ESLint config for Knotion Apps",
-  "version": "0.1.10",
+  "version": "0.2.0",
   "main": "index.js",
   "author": "HabitatWeb <atencion@habitatweb.com.mx> (https://habitatweb.mx)",
   "contributors": [

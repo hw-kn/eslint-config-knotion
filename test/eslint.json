@@ -799,12 +799,6 @@
         "no-return-await": 0,
         "no-unused-vars": 0,
         "@typescript-eslint/default-param-last": 2,
-        "@typescript-eslint/no-confusing-void-expression": [
-          2,
-          {
-            "ignoreVoidOperator": true
-          }
-        ],
         "@typescript-eslint/no-array-constructor": 2,
         "@typescript-eslint/no-dupe-class-members": 2,
         "@typescript-eslint/no-duplicate-imports": 2,

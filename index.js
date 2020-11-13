@@ -474,7 +474,6 @@ module.exports = {
         'no-return-await': OFF,
         'no-unused-vars': OFF,
         '@typescript-eslint/default-param-last': ON,
-        '@typescript-eslint/no-confusing-void-expression': [ON, { ignoreVoidOperator: true }],
         '@typescript-eslint/no-array-constructor': ON,
         '@typescript-eslint/no-dupe-class-members': ON,
         '@typescript-eslint/no-duplicate-imports': ON,
