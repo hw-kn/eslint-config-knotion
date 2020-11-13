@@ -5,7 +5,7 @@ const noBaseToStringOpts = {
 const restrictTemplateExpressionsOpts = {
   allowNumber: true,
   allowBoolean: true,
-  allowAny: false,
+  allowAny: true,
   allowNullish: true,
 }
 

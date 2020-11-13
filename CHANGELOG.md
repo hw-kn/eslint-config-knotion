@@ -1,6 +1,8 @@
 # Changes
 
-## \[0.1.9] - 2020-11-12
+## \[0.1.10] - 2020-11-12
+
+Incluye `any` en los tipos permitidos en `@typescript-eslint/restrict-template-expressions` más los cambios de la versión 0.1.9 eliminada:
 
 ### Added
 
