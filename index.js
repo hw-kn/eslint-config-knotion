@@ -149,7 +149,7 @@ const simpleImportSortOpts = {
     // Importaciones relativas, primero carpetas superiores
     ['^\\.\\.(?!/?$)', '^\\.\\./?$', '^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
     // Typings
-    ['\\u0000$'],
+    ['^react.*\\u0000$', '^[^~.].*\\u0000$', '^~.*\\u0000$', '^\\.\\..*\\u0000$', '.*\\u0000$']
   ],
 }
 

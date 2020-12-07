@@ -1,5 +1,11 @@
 # Changes
 
+## \[0.2.2] - 2020-12-07
+
+### Changed
+
+- Fix a las reglas de `eslint-simple-import-sort` posición del bloque `type`
+
 ## \[0.2.1] - 2020-12-07
 
 ### Changed
