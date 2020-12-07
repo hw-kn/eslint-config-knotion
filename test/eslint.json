@@ -473,7 +473,7 @@
     "@typescript-eslint/type-annotation-spacing": 2,
     "@typescript-eslint/unified-signatures": 1,
     "compat/compat": 2,
-    "simple-import-sort/sort": [
+    "simple-import-sort/imports": [
       2,
       {
         "groups": [
@@ -489,8 +489,6 @@
             "^.+\\.(s?css|less)$"
           ],
           [
-            "^public/",
-            "^src/",
             "^~/"
           ],
           [
@@ -499,10 +497,14 @@
             "^\\./(?=.*/)(?!/?$)",
             "^\\.(?!/?$)",
             "^\\./?$"
+          ],
+          [
+            "\\u0000$"
           ]
         ]
       }
     ],
+    "simple-import-sort/exports": 1,
     "jsx-a11y/accessible-emoji": 2,
     "jsx-a11y/alt-text": 2,
     "jsx-a11y/anchor-has-content": 1,

@@ -1,5 +1,12 @@
 # Changes
 
+## \[0.2.1] - 2020-12-07
+
+### Changed
+
+- Ajustes por cambio de reglas de `eslint-simple-import-sort` 6 y 7 (bloque `type` y regla `export`)
+- Actualiza dependencias.
+
 ## \[0.2.0] - 2020-11-12
 
 ### Added

@@ -144,10 +144,12 @@ const simpleImportSortOpts = {
     ['^react', '^@?\\w'],
     // Importaciones de efecto secundario y estilos
     ['^\\u0000', '^.+\\.(s?css|less)$'],
-    // Paquates internos con caracteres de path sustituto
-    ['^public/', '^src/', '^~/'],
+    // Paquates internos con caracter de path sustituido
+    ['^~/'],
     // Importaciones relativas, primero carpetas superiores
     ['^\\.\\.(?!/?$)', '^\\.\\./?$', '^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
+    // Typings
+    ['\\u0000$'],
   ],
 }
 
@@ -344,7 +346,8 @@ module.exports = {
     'compat/compat': ON,
 
     // Reemplaza 'sort-imports': [ON, sortImportsOpts],
-    'simple-import-sort/sort': [ON, simpleImportSortOpts],
+    'simple-import-sort/imports': [ON, simpleImportSortOpts],
+    'simple-import-sort/exports': WARN,
 
     'jsx-a11y/accessible-emoji': ON,
     'jsx-a11y/alt-text': ON,
