@@ -4,7 +4,7 @@
 
 ### Changed
 
-- Actualiza a Prettierx 0.16.0
+- Actualiza a Prettierx 0.16.0 (Prettier 2.2.0)
 
 ### Removed
 
