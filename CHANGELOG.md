@@ -1,5 +1,15 @@
 # Changes
 
+## \[0.3.0] - 2021-01-19
+
+### Changed
+
+- Actualiza a Prettierx 0.16.0
+
+### Removed
+
+- `react/react-in-jsx-scope` y `react/jsx-uses-react` no necesarios con la nueva API de React
+
 ## \[0.2.2] - 2020-12-07
 
 ### Changed
