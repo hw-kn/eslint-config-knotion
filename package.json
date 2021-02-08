@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-knotion",
   "description": "Customized ESLint config for Knotion Apps",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "main": "index.js",
   "author": "HabitatWeb <atencion@habitatweb.com.mx> (https://habitatweb.mx)",
   "contributors": [
@@ -20,18 +20,18 @@
   ],
   "engines": {
     "node": "^10.13.0 || >=12.0.0",
-    "yarn": "^1.22.5"
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "test": "node test/index"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "~4.14.0",
-    "@typescript-eslint/parser": "~4.14.0",
+    "@typescript-eslint/eslint-plugin": "~4.14.2",
+    "@typescript-eslint/parser": "~4.14.2",
     "confusing-browser-globals": "*",
     "eslint-plugin-compat": "~3.9.0",
     "eslint-plugin-jsx-a11y": "~6.4.1",
-    "eslint-plugin-prettierx": "~0.16.0",
+    "eslint-plugin-prettierx": "~0.17.0",
     "eslint-plugin-promise": "~4.2.1",
     "eslint-plugin-react": "~7.22.0",
     "eslint-plugin-react-hooks": "~4.2.0",

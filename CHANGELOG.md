@@ -1,5 +1,16 @@
 # Changes
 
+## \[0.3.1] - 2021-02-08
+
+### Changed
+
+- Actualiza a Prettierx 0.17.0 que tiene cambios no compatibles con la 0.16.x
+- Actualiza otras dependencias.
+
+### Fixed
+
+- `react/react-in-jsx-scope` y `react/jsx-uses-react` no se habían removido.
+
 ## \[0.3.0] - 2021-01-19
 
 ### Changed

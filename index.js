@@ -407,7 +407,6 @@ module.exports = {
     'react/jsx-no-undef': ON,
     'react/jsx-no-useless-fragment': ON,
     'react/jsx-pascal-case': [ON, { ignore: [] }],
-    'react/jsx-uses-react': ON,
     'react/jsx-uses-vars': ON,
     'react/no-access-state-in-setstate': ON,
     'react/no-danger-with-children': ON,
@@ -423,7 +422,6 @@ module.exports = {
     'react/no-unescaped-entities': [ON, { forbid: ['>', '"', "'", '}'] }],
     'react/no-unknown-property': ON, // preact
     'react/no-will-update-set-state': ON,
-    'react/react-in-jsx-scope': ON,
     'react/require-render-return': ON,
     'react/style-prop-object': ON,
     'react/void-dom-elements-no-children': ON,
